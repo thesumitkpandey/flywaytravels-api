@@ -10,11 +10,11 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @RestController
-public class AmadeusAirportController {
+public class AirportController {
 
     private final AirportService airportService;
 
-    public AmadeusAirportController(AirportService airportService) {
+    public AirportController(AirportService airportService) {
         this.airportService = airportService;
     }
 
