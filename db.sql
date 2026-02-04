@@ -9,7 +9,7 @@ CREATE TABLE airports (
   airport_name VARCHAR(400) NOT NULL,               -- INDIRA GANDHI INTL
   city_name VARCHAR(400) NOT NULL,                  -- DELHI
   country_name VARCHAR(400) NOT NULL,               -- INDIA
-  latitude DOUBLE PRECISION,
+  latitude DOUBLE PRECISION,                      --
   longitude DOUBLE PRECISION,
   timezone_offset VARCHAR(10),              -- +05:30
   CONSTRAINT uq_airports_iata UNIQUE (iata_code)
