@@ -1,6 +1,6 @@
 --Master table for storign the airports record
-CREATE TABLE airports (
-  id INT PRIMARY KEY,
+CREATE TABLE IF NOT EXISTS public.airports (
+  id BIGSERIAL PRIMARY KEY,
   iata_code VARCHAR(20) NOT NULL,               -- DEL
   city_code VARCHAR(20),                        -- DEL
   country_code VARCHAR(20),                     -- IN

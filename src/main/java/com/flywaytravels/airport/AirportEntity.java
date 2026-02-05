@@ -9,12 +9,12 @@ import lombok.Setter;
 @Table(name = "airports")
 @Getter
 @Setter
-public class Airport {
+public class AirportEntity {
 
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
 
     @Column(name = "iata_code", nullable = false, length = 20)
     private String iataCode;

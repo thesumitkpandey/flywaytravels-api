@@ -3,16 +3,16 @@ version: "3.9"
 services:
   db:
     image: postgres:16
-    container_name: flyway_postgres
+    container_name: flywaytravels_db
     restart: unless-stopped
 
     environment:
-      POSTGRES_DB: flyway_travels
-      POSTGRES_USER: flyway_user
-      POSTGRES_PASSWORD: flyway_pass
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: securedaccess
 
     ports:
-      - "5432:5432"
+      - "1234:5432"
 
     volumes:
       - postgres_data:/var/lib/postgresql/data
